@@ -137,12 +137,19 @@ img {
 }
 
 .search-input {
-    width: 90%;
+    width: 50%;
     margin: 1em auto;
     padding: 0.5em;
     border: 2px solid #343a40;
     border-radius: 5px;
     font-size: 1em;
+    display: block;
+    transition: border-color 0.3s;
+}
+
+.search-input:focus {
+    border-color: #1e90ff;
+    outline: none;
 }
 
 @media only screen and (max-width: 1024px) {
